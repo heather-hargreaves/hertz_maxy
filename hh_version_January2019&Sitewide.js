@@ -98,15 +98,15 @@ function createCookie(name, value, days) {
 //             $.initialize.defaults = { target: document.documentElement, observer: null };
 //         })(jQuery);
 
-//         jQuery.extend(jQuery.easing, {
-//             def: 'easeOutCustom',
-//             swing: function(x, t, b, c, d) {
-//                 return jQuery.easing[jQuery.easing.def](x, t, b, c, d);
-//             },
-//             easeOutCustom: function(x, t, b, c, d) {
-//                 return -c * (t /= d) * (t - 2) + b;
-//             }
-//         });
+         jQuery.extend(jQuery.easing, {
+             def: 'easeOutCustom',
+             swing: function(x, t, b, c, d) {
+                 return jQuery.easing[jQuery.easing.def](x, t, b, c, d);
+             },
+             easeOutCustom: function(x, t, b, c, d) {
+                 return -c * (t /= d) * (t - 2) + b;
+             }
+         });
 //     }
 
 //     if (typeof owlCarousel !== "function") {
